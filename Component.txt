@@ -1,0 +1,54 @@
+//Heading Component
+import React from 'react';
+function Heading ()
+{
+return <h1>My Name is Gaurav</h1>
+}
+export default Heading;
+//Paragraph Component
+import React  from 'react';
+
+function Para ()
+{
+    return <p>best 5 South Indian Movies</p>;
+}
+export default Para;
+//Ol Component
+import React from 'react';
+function Ol()
+{
+    return <ol>   
+        <li>Pogaru</li>
+          <li>Ekkadikki</li>
+          <li>KGF</li>
+          <li>Arya</li>
+          <li>A Aa2</li>
+    </ol>;
+}
+export default Ol;
+//App Component
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Heading from './Heading'; 
+import Para from './Para';
+import Ol from './Ol';
+
+function App()
+{
+    return (
+        <><Heading/>
+        <Para/>
+        <Ol/>
+        <Heading/>
+        </>
+    )
+}
+export default App;
+//index.js
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+  ReactDOM.render(<>
+  <App/>
+  </>,document.getElementById('root'));
+

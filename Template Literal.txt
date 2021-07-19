@@ -1,0 +1,10 @@
+import React from 'react';
+import  ReactDOM from 'react-dom';
+const fname="Gaurav";    //Template Literal
+const lname="Jadhav";
+ReactDOM.render(<>
+<p>{`my name is  ${fname}  ${lname}`}</p>
+<h1>Hello Everyone</h1>
+<h2>{`The sum of two number is ${2+3}`}</h2>
+</>
+,document.getElementById('root'));

@@ -1,0 +1,52 @@
+//Simple Chalenge
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+const curdate= new Date(2020,10,31,2).getHours();
+let gereentings={};
+let cssStyle={};
+if(curdate>=1&& curdate<12)
+{
+    gereentings="Good Morning";
+    cssStyle.color="Green";
+}
+else if(curdate>=12&& curdate<19)
+{
+    gereentings="Good Afternoon";
+    cssStyle.color="Orange";
+}
+else{
+    gereentings="Good Night";
+    cssStyle.color="Black";
+}
+ReactDOM.render(<><div className="heading">
+<h1>Hello,<span style={cssStyle}>  {gereentings}</span>
+</h1></div></>,document.getElementById("root"));
+
+//css file
+*{margin: 0;padding: 0; box-sizing: border-box;}
+.heading{
+    color: pink;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-shadow: 0px 2px 2px 0px;
+    margin: 50px;
+}
+body{
+    
+    background-color: powderblue;
+}
+ div{
+     height: 100%;
+     width: 100vh;
+     justify-content: center;
+     font-family:Arial, Helvetica, sans-serif;
+     align-items: center;
+ }
+ h1{
+     padding: 20px,20px;
+     color: pink;
+     border-radius: 20px;
+     background-color: salmon;
+ }
